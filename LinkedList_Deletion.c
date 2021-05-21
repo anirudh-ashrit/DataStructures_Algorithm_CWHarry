@@ -82,13 +82,13 @@ void main() {
     head->next = second;
 
     second->data = 11;
-    second->next = third;
+    second->next = fourth;
 
     third->data = 15;
-    third->next = fourth;
+    third->next = NULL;
 
     fourth->data = 17;
-    fourth->next = NULL;
+    fourth->next = third;
 
     Traversal(head);
     //head = deleteAtStart(head);
