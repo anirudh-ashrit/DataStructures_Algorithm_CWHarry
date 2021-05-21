@@ -26,13 +26,13 @@ int main() {
     head->next = second;
 
     second->data = 11;
-    second->next = fourth;
+    second->next = third;
 
     third->data = 15;
-    third->next = NULL;
+    third->next = fourth;
 
     fourth->data = 17;
-    fourth->next = third;
+    fourth->next = NULL;
 
     Traversal(head);
 
