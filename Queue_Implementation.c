@@ -138,7 +138,7 @@ void print() {
 int main() {
     q = (struct queue *)malloc(sizeof(struct queue));
     q->size = 10;
-    q->f = q->r = 0;
+    q->f = q->r = -1;
     q->arr = (int *)malloc(q->size * sizeof(int));
 
     
@@ -146,7 +146,6 @@ int main() {
     enqueue(2);
     enqueue(3);
     enqueue(4);
-    printf("after");
     print(q);
     printf("Removed element is: %d\n", dequeue(q));
 
